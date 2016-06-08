@@ -1,0 +1,208 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+*{
+  margin:0;
+  padding:0;
+}
+html {
+  height: auto;
+}
+
+body {
+  height: auto;
+  background-color: #fafafa;
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+
+/* ## NAVBAR CUSTOMISATIONS ## */
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  a {
+    font-size : 1.5em;
+    color: #fff;
+  }
+}
+.navbar-brand a:hover{
+	color: #333;
+	text-decoration: none;
+}
+
+.navbar-default {
+  background-color: #555;
+  .navbar-nav li a {
+    color: #fff;
+  }
+}
+
+.navbar-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+
+//Background chen navbar
+
+
+.dn-navbar{
+  position: fixed!important;
+  z-index: 2000;
+  width: 100%!important;
+  border-radius: 0!important;
+  top: 0;
+}
+
+//dropdown menu
+
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.home-page{
+  background-image: image-url('home.jpg');
+  position: relative;
+  overflow: hidden;
+  height: 667px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  z-index: 8000;
+}
+
+.home-page-content{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 20px;
+  z-index: 8001;
+}
+.dn-h1-home{
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -.037em;
+}
+.dn-h3-home{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+
+.dn-home-get-started{
+  background: #fff;
+  color: #666;
+  display: inline-block;
+  margin: 40px 5px 0;
+  padding: 13px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  -moz-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -o-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -webkit-transition: background .1s ease-in-out,color .1s ease-in-out;
+  transition: background .1s ease-in-out,color .1s ease-in-out;
+  min-width: 170px;
+}
+
+.dn-home-get-started:hover{
+  background: #eee;
+  color: red;
+}
+.dn-home-login{
+  background: #fff;
+  border: 2px solid rgba(255,255,255,.6);
+  color: #666;
+  display: inline-block;
+  margin: 40px 5px 0;
+  padding: 13px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  -moz-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -o-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -webkit-transition: background .1s ease-in-out,color .1s ease-in-out;
+  transition: background .1s ease-in-out,color .1s ease-in-out;
+  min-width: 170px;
+}
+.dn-home-login:hover{
+  background: #fff;
+  color: red;
+}
+  
+.container {
+	padding-top:200px;
+	text-align:center;
+}
