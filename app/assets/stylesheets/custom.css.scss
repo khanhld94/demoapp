@@ -1,0 +1,87 @@
+.home-page{
+  background-image: image-url('home.jpg');
+  position: relative;
+  overflow: hidden;
+  height: 667px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  z-index: 8000;
+}
+
+.home-page-content{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 20px;
+  z-index: 8001;
+}
+.dn-h1-home{
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -.037em;
+}
+.dn-h3-home{
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+
+.dn-home-get-started{
+  background: #fff;
+  color: #666;
+  display: inline-block;
+  margin: 40px 5px 0;
+  padding: 13px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  -moz-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -o-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -webkit-transition: background .1s ease-in-out,color .1s ease-in-out;
+  transition: background .1s ease-in-out,color .1s ease-in-out;
+  min-width: 170px;
+}
+
+.dn-home-get-started:hover{
+  background: #eee;
+  color: red;
+}
+.dn-home-login{
+  background: #fff;
+  border: 2px solid rgba(255,255,255,.6);
+  color: #666;
+  display: inline-block;
+  margin: 40px 5px 0;
+  padding: 13px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  -moz-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -o-transition: background .1s ease-in-out,color .1s ease-in-out;
+  -webkit-transition: background .1s ease-in-out,color .1s ease-in-out;
+  transition: background .1s ease-in-out,color .1s ease-in-out;
+  min-width: 170px;
+}
+.dn-home-login:hover{
+  background: #fff;
+  color: red;
+}
