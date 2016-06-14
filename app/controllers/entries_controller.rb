@@ -6,7 +6,7 @@ class EntriesController < ApplicationController
     @entry = current_user.entries.build(entry_params)
     if @entry.save
       flash[:success] = "entry created!"
-      redirect_to home_path
+      redirect_to :back
     else
       @feed_items = current_user.feed.paginate(page: params[:page], :per_page => 10)
       render 'static_pages/home'
@@ -16,7 +16,7 @@ class EntriesController < ApplicationController
   def destroy
     @entry.destroy
     flash[:success] = "Entry deleted"
-    redirect_to home_path
+    redirect_to :back
   end
 
   private
@@ -27,6 +27,6 @@ class EntriesController < ApplicationController
 
     def correct_user
       @entry = current_user.entries.find_by(id: params[:id])
-      redirect_to home_path if @entry.nil?
+      redirect_to root_url if @entry.nil?
     end
 end

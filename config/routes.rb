@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
 
 
-  root                'home#home'
-  get    'home'    => 'static_pages#home'
+  get                'home/home'
+  root                'static_pages#home'
   get    'index'   => 'static_pages#index'
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
   resources :entries,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
-
+  resources :comments, only: [:create, :destroy]
 
 
   # Example of regular route:
