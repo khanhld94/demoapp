@@ -15,8 +15,9 @@
     <% if entry.comments.any? %>
       <%= render entry.comments, entry: entry %>
     <%end%>
-  </div>
-  <% if logged_in? %>
+  </div id ="entry">
+  <% if logged_in? && current_user.following.include?(@user) %>
     <%= render 'shared/comment_form', entry: entry %>
   <% end %>
+  <div></div>
 </li>
