@@ -16,7 +16,7 @@
       <%= render entry.comments, entry: entry %>
     <%end%>
   </div id ="entry">
-  <% if logged_in? && current_user.following.include?(@user) %>
+  <% if logged_in? && (current_user.following.include?(entry.user)||current_user?(entry.user)) %>
     <%= render 'shared/comment_form', entry: entry %>
   <% end %>
   <div></div>
