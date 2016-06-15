@@ -6,7 +6,7 @@ class EntriesController < ApplicationController
     @entry = current_user.entries.build(entry_params)
     if @entry.save
       flash[:success] = "entry created!"
-      redirect_to :back
+      redirect_to root_path
     else
       @feed_items = current_user.feed.paginate(page: params[:page], :per_page => 10)
       render 'static_pages/home'
